@@ -1,0 +1,107 @@
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+header {
+	background-color: #3b3b3b;
+}
+
+h1 {
+	color: #bbcefa;
+	margin: 0;
+	font-family: 'Lobster', cursive;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 64px;
+    text-shadow: 2px 1px 1px #fff;
+}
+
+#emphasize {
+	text-align: center;
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 25px;
+    line-height: 1.5;
+    border: 5px dotted ;
+}
+
+section {
+	display: flex;
+    justify-content: space-between;
+    margin: 0 6%;
+}
+
+.flex {
+	margin: 0 20px;
+	padding: 10px;
+	flex-basis: 100%;
+	background-color: #bbcefa;
+	color: #3b3b3b;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 1px #3b3b3b;
+}
+
+.flex h2 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.flex ol {
+	padding-left: 22px;
+	margin: 0;
+	line-height: 1.4;
+}
+
+.flex li {
+	margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.flex span {
+	text-align: center;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+
+#animation {
+	-webkit-animation: color-change 5s infinite;
+	-moz-animation: color-change 5s infinite;
+	-o-animation: color-change 5s infinite;
+	-ms-animation: color-change 5s infinite;
+	animation: color-change 5s infinite;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 68px;
+}

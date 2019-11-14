@@ -1,0 +1,84 @@
+
+/* With keywords from and to */
+/* The animation code */
+@keyframes example1 {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+#div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example1 4s;
+  margin-bottom: 20px;
+}
+
+/* With percentages */
+/* The animation code */
+@keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+#div2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 20px;
+  animation: example2 4s;
+}
+
+
+/* Position and color */
+/* The animation code */
+@keyframes example3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+#div3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example3;
+  animation-duration: 4s;
+}
+
+
+/* TRANSITIONS */ 
+#div4 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin-bottom: 20px;
+  transition: width 2s;
+}
+
+#div4:hover {
+  width: 300px;
+  transition: width 2s;
+}
+
+#div5 {
+	width: 100px;
+  height: 100px;
+  background: blue;
+  transition: width 2s, height 4s, background 4s;
+}
+
+#div5:hover {
+	width: 300px;
+	height: 300px;
+  background: purple;
+	transition: width: 2s, height 4s, background 4s
+}

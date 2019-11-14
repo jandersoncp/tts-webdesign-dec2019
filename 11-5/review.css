@@ -1,0 +1,87 @@
+/* selector - property - value */
+
+/* Tip - add info on global font vs secondar font */
+
+/* Element selectors */
+body {
+	padding-top: 40px;
+	font-family: 'Times New Roman', Arial, serif;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	color: red;
+	font-size: 32px;
+}
+
+ul a {
+	text-decoration: none;
+}
+
+h1 {
+	color: green;
+	text-transform: uppercase;
+	font-size: 52px;
+	padding-bottom: 25px;
+}
+
+
+/* ID selectors */ 
+#fixedHeader {
+	position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+#fixedHeader img {
+	height: 30px;
+	padding-top: 7px;
+}
+
+#container {
+	text-align: center;
+}
+
+#bigBorder {
+	display: inline-block;
+	border: 10px solid black;
+	margin-top: 25px; /* Added margin above the element to separate it from the paragraph tags. */
+	padding: 10px; /* Added padding around the element to give the border breathing room */
+}
+
+
+/* Class selectors */
+/*.helveticaFont {
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	color: purple;
+}*/
+
+.bigFont {
+	font-size: 42px;
+	margin-bottom: 5px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+
+/* Bonus: hover styles! 
+
+ul li:hover {
+	color: blue;
+}*/
+
+h2 {
+	color: blue !important;
+}
+

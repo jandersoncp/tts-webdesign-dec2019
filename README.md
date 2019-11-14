@@ -1,2 +1,2 @@
-# tts-webdesign-dec2019
-Class files for Tech Talent South December 2019 Intro to Web Design course.
+# webdesign_tts_2019
+Code from the December 2019 Web Design class for TTS.

@@ -1,0 +1,49 @@
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+}
+
+nav {
+	background-color: #516b8a;
+	position: relative;
+    box-shadow: 0 3px 10px rgba(0,0,0,.8);
+}
+
+ul {
+	font-size: 32px;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	color: white; /* #fff */
+	text-align: center;
+	padding: 10px 0;
+}
+
+li {
+	display: inline-block;
+	width: 10%;
+}
+
+#dropdownHover {
+	/*position: relative;*/
+}
+
+#dropdownHover:hover #dropdown {
+	display: block;
+}
+
+#dropdown {
+	display: none;
+	position: absolute;
+	color: blue;
+	left: 62%;
+}
+
+#dropdown li {
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	text-shadow: 2px 2px 5px black;
+}

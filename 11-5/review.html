@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All about CSS - review!</title>
+	<link rel="stylesheet" href="review.css"> <!-- External stylesheet **Correct way** -->
+
+	<style>
+		/* Internal styles - not correct way */
+		h1 {
+			color: blue; /* Has hierarchy over external stylesheet */
+		}
+	</style>
+</head>
+<body>
+	<div id="fixedHeader">
+		<img src="http://cdn.onlinewebfonts.com/svg/img_74560.png">
+	</div>
+	<!-- I am wrapping my content in a div with the id container, so that I can align the text inside to the center of the page using css -->
+	<div id="container">
+		<h1>I am styled using an internal stylesheet!</h1>
+
+		<!-- Inline styling - takes precedence over any other style - but NOT correct way! -->
+		<h2 id="fixedHeader2" style="color: green">I am styled using inline styling.</h2>
+
+		<p class="helveticaFont">I am styled using the helveticaFont class.</p>
+		<br>
+		<p class="helveticaFont">I am also styled using the helveticaFont class.</p>
+		<p>I am NOT styled using the helveticaFont class, so I do not inherit that style.</p>
+
+		<div class="park">
+			<p>park div</p>
+		</div>
+		
+		<span class="helveticaFont" id="bigBorder">I have helveticaFont, but I also have an id of bigBorder to add more styles.</span>
+	</div>
+
+	<h2 class="helveticaFont bigFont">Links section</h2>
+	<ul>
+		<a href="displayHowTo.html">
+			<li>Link 1</li>
+		</a>
+		<a href="displayHowTo.html">
+			<li>Link 2</li>
+		</a>
+		<a href="displayHowTo.html">
+			<li>Link 3</li>
+		</a>
+	</ul>/
+</body>
+</html>

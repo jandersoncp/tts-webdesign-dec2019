@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All about animations!</title>
+	<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+	<h1>We briefly covered animations in our previous class on Tuesday, but it's time to go in depth.</h1>
+
+	<h2>Browser prefixes - some older browsers need specific prefixes to understand the animation properties</h2>
+	<ul>
+		<li>-webkit-animation ----->   CHROME</li>
+		<li>-moz-animation    ----->   FIREFOX</li>
+		<li>-o-animation      ----->   OPERA</li>
+		<li>-ms-animation     ----->   IE/EDGE</li>
+	</ul>
+
+	<h2>Keyframes</h2>
+	<p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</p>
+
+	<p>NOTE: To get an animation to work, you must bind the animation to an element.</p>
+
+	<p>You can also use percentages to define animation timing.</p>
+
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+
+	<h2>Other cool things you can do:</h2>
+	<p>Delay an animation using animation-delay: Xs</p>
+	<p>Set how many times an animation should run using animation-iteration-count: X or infinite</p>
+	<p>Run in reverse direction or alternate cycles using animation-direction: revers, normal, alternate or alternate-reverse</p>
+	<p>Specify the speed curve of an animation using animation-timing-function: linear, ease, ease-in, ease-out, ease-in-out</p>
+
+	<h2>Animation shorthand</h2>
+	<p>Turns this:</p>
+	<ul>
+		<li>animation-name: example;</li>
+		<li>animation-duration: 5s;</li>
+		<li>animation-timing-function: linear;</li>
+		<li>animation-delay: 2s;</li>
+		<li>animation-iteration-count: infinite;</li>
+		<li>animation-direction: alternate;</li>
+	</ul>
+	<p>Into this:</p>
+	<ul>
+		<li>animation: example 5s linear 2s infinite alternate</li>
+	</ul>
+
+	<h2>EXERCISES:</h2>
+	<p>Add an animation for a div to change the color from red to blue</p>
+	<p>Use percentage keyframe to set background color and position based on percentage</p>
+	<p>Create a 2s delay for an animation</p>
+	<p>Animate an element forward and backwards infinite amount of times</p>
+
+
+	<!-- TRANSITIONS -->
+	<h2>Just like animations, only without keyframes</h2>
+
+	<h2>Browser prefixes - some older browsers need specific prefixes to understand the animation properties</h2>
+	<ul>
+		<li>-webkit-transition ----->   CHROME</li>
+		<li>-moz-transition    ----->   FIREFOX</li>
+		<li>-o-transition      ----->   OPERA</li>
+		<li>-ms-transition     ----->   IE/EDGE</li>
+	</ul>
+
+	<h2>To create a transition effect, you must specify two things:</h2>
+	<ul>
+		<li>the CSS property you want to add an effect to</li>
+		<li>the duration of the effect</li>
+		<li>Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.</li>
+	</ul>
+
+	<div id="div4"></div>
+	<div id="div5"></div>
+
+	<h2>Other cool things you can do:</h2>
+	<p>Delay a transition using transition-delay: Xs</p>
+	<p>Specify the timing of a transition using transition-timing-function: linear, ease, ease-in, ease-out, ease-in-out</p>
+
+	<h2>Transition shorthand</h2>
+	<p>Turns this:</p>
+	<ul>
+		<li>transition-property: width;</li>
+		<li>transition-duration: 5s;</li>
+		<li>transition-timing-function: linear;</li>
+		<li>transition-delay: 2s;</li>
+	</ul>
+	<p>Into this:</p>
+	<ul>
+		<li>transition: width 2s linear 1s;</li>
+	</ul>
+
+	<h2>EXERCISES:</h2>
+	<p>Add a transition for a div to change the width from 200 to 500 on a 2s transition</p>
+	<p>Specify that the transition of the div element should have a "ease-in-out" speed curve</p>
+	<p>Specify that the transition of the div element should have a "0.5" second delay before starting.</p>
+	<p>Using the transition shorthand property, specify width changes for the div element should have: "2" second duration, "ease-in-out" speed curve, and a "0.5" second delay before starting.</p>
+
+</body>
+</html>
