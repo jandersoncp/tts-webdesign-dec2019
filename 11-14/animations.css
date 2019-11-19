@@ -51,7 +51,12 @@
   position: relative;
   background-color: red;
   animation-name: example3;
+  animation-direction: infinite;
   animation-duration: 4s;
+  -webkit-animation: example3 4s infinite;
+  -o-animation: example3 4s infinite;
+  -ms-animation: example3 4s infinite;
+  -moz-animation: example3 4s infinite;
 }
 
 
