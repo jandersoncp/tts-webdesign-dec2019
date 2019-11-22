@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All about jQuery!</title>
+</head>
+<body>
+	<h2>All about jQuery</h2>
+
+	<ul>
+		<li>jQuery is a LIBRARY not a language</li>
+		<li>jQuery is the #1 most used library on the web</li>
+		<li>Same pattern - select something, watch for an event, do something when it happens</li>
+		<li>jQuery "Wraps" dom elements and makes them more convenient to work with.</li>
+	</ul>
+
+	<div>
+		<h3>Selecting elements</h3>
+		<div>Just like querySelectorAll()</div>
+
+		<div id="myDivWithAnId"></div>
+	</div>
+
+	<div>
+		<h3>Attaching an event</h3>
+
+		<div id="firstDiv">
+		    <button id="myButton" name="button">Click ME</button>
+		</div>
+		<div id="someOtherElement">
+		    <h3>hello world</h3>
+		</div>
+
+		<h3>Manipulating DOM</h3>
+		<p>Just like innerHTML, appendChild, etc we learned Tuesday.</p>
+	</div>
+
+	<div>
+		<h3>What is ($this)??</h3>
+		<p>try console.log($(this)) inside one of your functions and inspect the result</p>
+
+		<p>$(this) will return a DOM element.
+		It is important to remember that everytime jQuery sees $(this), it will lookup the DOM element, which can impact performance over time. To address the issue of multiple lookups, you can store $(this) in a variable so the object is now stored as a reference in memory, like so:</p>
+		<p>const self = $(this);</p>
+	</div>
+
+	<div>
+		<h3>Document.ready</h3>
+		<p>This makes sure the document exists before your code tries to manipulate it.</p>
+		<p>Most of your jQuery scripts should be loaded on the DOM's document.ready event. Pass a function into jQuery object to run it on DOM ready.</p>
+	</div>
+
+	<div>
+		<h3>Updating styles and classes</h3>
+		<div>You can update styles and classes easily with one command!</div>
+	</div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="jQuery.js"></script>
+</body>
+</html>
