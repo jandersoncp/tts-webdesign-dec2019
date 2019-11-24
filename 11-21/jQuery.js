@@ -3,6 +3,7 @@ console.log(elements);
 
 // Attach an event
 $('#myButton').on('click', function(event){
+	console.log(event);
 	//Invoked when #myButton gets a click event
 	this.innerHTML = "button clicked";
 })
@@ -24,7 +25,7 @@ $('#myButton').on('click', function(event){
 	$('#someOtherElement').append(newEl);
 
 	//Add an attribute
-	$('#someOtherElement').append(newEl).attr({'href' : 'http://techtalentsouth.com'})
+	// $('#someOtherElement').append(newEl).attr({'href' : 'http://techtalentsouth.com'})
 
 	//Remove it
 	newEl.remove();

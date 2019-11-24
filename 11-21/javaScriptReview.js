@@ -19,7 +19,7 @@ console.log(valueReturned);
 const el = document.getElementById('username');
 const inputs = document.getElementsByTagName('input');
 const inError = document.getElementsByClassName('error');
-const firstButton = document.querySelector('button');
+const firstButton = document.querySelector('#buttonElement');
 const inError = document.querySelectorAll('input.error');
 const selectedItem = document.querySelector('li.selected')
 const first = selectedItem.previousElementSibling;
